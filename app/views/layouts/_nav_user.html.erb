@@ -23,27 +23,42 @@
          <li><a href="/explore">Moments</a></li>
           <li><a href="/explore">Notification</a></li>
            <li><a href="/explore">Messages</a></li>
-           <li type="button" class="btn btn-primary navbar-btn">Tweet</li>
-            <li><a href="/user/<%= current_user.username  %>">Profile</a></li>
-            <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
-            <%= link_to "Log Out", destroy_user_session_path, class: "btn btn-default navbar-btn" , :method => :delete  %>
        
       
       </ul>
       
-     
+      <ul class="nav navbar-nav navbar-right">
+      <li>
                     <form class="navbar-form navbar-right">
                       <div class="form-group">
                         <input type="text" class="form-control" placeholder="Search Flutter">
                       </div>
                       
                     </form>
-                   
+                    </li>
         
-        
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="icon.png" height="25px" width="25px" %> <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li role="separator" class="divider"></li>
+            <li><a href="/user/<%= current_user.username  %>">Profile</a></li>
+            <li role="separator" class="divider"></li>
+             <li><a href="/explore">Explore</a></li>
+             <li role="separator" class="divider"></li>
+             
+             <li role="separator" class="divider"></li>
+            <li><%= link_to('Edit Profile', edit_user_registration_path) %></li>
+
+            <li role="separator" class="divider"></li>
+               <%= link_to "Log Out", destroy_user_session_path, class: "btn btn-default navbar-btn" , :method => :delete  %>
+
+               </ul>
+               <li type="button" class="btn btn-primary navbar-btn">Tweet</li>
+        </li>
         
          
 
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
