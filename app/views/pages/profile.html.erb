@@ -1,61 +1,103 @@
-	<div class= "row">
-  <div class="col-xs-12">
-  <div class="jumbotron">
-  <%= current_user.username	 %>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
 
-</br>
-
- </div>
-</div>
-</div>
 
 
 <div class= "row">
-  <div class="col-xs-3">
-		<div class="panel panel-default">
-		  <div class="panel-body">
-		  <p> profile</p>
-		  </div>
-		  </div>
+  <div class="col-xs-3" >
+  		<div class="col-sm-12" style="margin-top: -200px;">
+  		<img src="/avatar.png" height="250px" width= "250px" class="rounded-img">
+  		</div>
+  		
+  		<div>
+  			<h1 style="color: black; font-weight: bold;"><%= params[:id] %></h1>
+  			<p>The sarcastic artist and an interpreneur in process.Also on Youtube <a href="http://www.youtube.com">http://www.youtube.com</p>	
+  		</div>	 
   </div>
 
   
 
   <div class="col-xs-6">
-  <%= render '/components/post_form' %>
+  <%= render '/components/post_form' %></br></br>
+
   <% for @p in @posts %>
-		<div class="panel panel-default">
-		  <div class="panel-body">
+		<div class="panel panel-default post-panel">
+		  <div class="panel-body row">
+		
+		  <div class="col-sm-1">
+		<img src="/avatar.png" class="rounded-img" height="50px" width="50px"></img>
+		</div>
+
+		<div class="col-sm-11">
 		<p class="post-title"><span class="post-owner"><%= User.find(@p.user_id).username %> </span><span class="post-creation">- <%= @p.created_at.to_formatted_s(:short) %></span></p>
-		<p><%= @p.content %></p>
-		</br>
-		</br>
+		<p class="post-content"><%= @p.content %></p>
+		</div> 
+		  <div class="col-sm-12">
+		<p class="post-links">
+		<span class="glyphicon glyphicon-comment g-links" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon retweet g-links" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-heart g-links" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-option-horizontal g-links" aria-hidden="true"></span>
+		<a href="">View Conversation</a>
+		</p>
+		</div> 
+
+		
+		
 		</div>
 		</div>
 		 <% end %>
+
+
+			
+				<div class="panel panel-default post-panel">
+		  			<div class="panel-body row">	  
+						  <div class="col-sm-12">
+						  <center><img src="/icon.png" height="25px" width="25px"></img>
+						  <a href="#top"><p class="opacity: .7; color: grey;">Back to Top	
+						  <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						  </p>
+						  </a>
+						  </center>	
+						</div> 
+	
+				</div>
+			</div>
+
+
+
   </div>
  
 
   <div class="col-xs-3">
 		<div class="panel panel-default">
 		  <div class="panel-body">
-		<p>who to follow</p>
+		<h5 style="color: grey; font-size: 125%;">Who to follow</h5></br>
+		<p style="opacity: 0.95;">FC BARCELONA</p></br>
+			<p style="opacity: 0.95;">Carey Hemneth</p></br>
+				<p style="opacity: 0.95;">Hunter S Thompson</p></br>
+
+				<p style="opacity: 0.95;">Taylor Swift</p></br>
+
+				<p style="opacity: 0.95;">G Eazy</p></br>
 		</div>
 		</div>
 
 		<div class="panel panel-default">
 		  <div class="panel-body">
-		  <p> trends</p>
+		  <p> Trends</p>
+			<a href=""> #IndiaVsPak</a></br>
+			<span style="color: grey;">31k Posts</span></br></br>
+			<a href=""> #Barca</a></br>
+			<span style="color: grey;">31k Posts</span></br></br>
+			<a href=""> #Messi</a></br>
+			<span style="color: grey;">31k Posts</span></br></br>
+			<a href=""> #DUSU</a></br>
+			<span style="color: grey;">31k Posts</span> </br></br>
+			<a href=""> #GST</a></br>
+			<span style="color: grey;">31k Posts</span></br></br>
+			<a href=""> #Politics</a></br>
+			<span style="color: grey;">31k Posts</span>
+
+
 		  </div>
 		  </div>
 
