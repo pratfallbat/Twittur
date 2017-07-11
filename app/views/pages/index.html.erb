@@ -1,6 +1,40 @@
 <% if !user_signed_in? %>
 	<style>
-		body{
+		.bbb{
+			background: linear-gradient(
+				rgba(0,0,0, 0.7),
+				rgba(0,0,0, 0.7)
+				),url("/images.jpeg") no-repeat center center fixed;
+			 	
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover;
+		}
+		.ccc{
+			background: linear-gradient(
+				rgba(0,0,0, 0.7),
+				rgba(0,0,0, 0.7)
+				),url("/icon.png") no-repeat center center fixed;
+			 	
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover;
+		}
+		.ddd{
+			background: linear-gradient(
+				rgba(0,0,0, 0.7),
+				rgba(0,0,0, 0.7)
+				),url("/lunaflutter.png") no-repeat center center fixed;
+			 	
+			-webkit-background-size:cover;
+			-moz-background-size:cover;
+			-o-background-size:cover;
+			background-size:cover;
+		}
+
+body{
 			background: linear-gradient(
 				rgba(0,0,0, 0.7),
 				rgba(0,0,0, 0.7)
@@ -47,26 +81,150 @@
 
 
 
+ 		.row-eq-height{text-align: center;
+ 		color: grey;
+ 		margin-top: 500px;
+ 		font-size: 70;
+ 		font-weight: 500;
+ 	font-size: 150%;
+
+
+ 		}
+
+
+
 	</style>
 
 	<div class="container-index row">
-	<div class ="col-md-6">
-	<h1>Welcome to flutter</h1>
-<p class="text">
-Connect with your buddies,Chat with your friends.</br>Share your adventure.</br>Just like a blog but with less charracter!</p>
+	<div class="container-fluid">
+    <div class="row">
+								<div class ="col-md-6">
+								<h1>Welcome to flutter</h1>
+							<p class="text">
+							Connect with your buddies,Chat with your friends.</br>Share your adventure.</br>Just like a blog but with less charracter!</p>
+							</div>
+
+								<div class ="col-sm-6">
+								<div class="log-in panel">Log In</div>
+
+									
+								<div class="sign-up panel">Sign Up</div>
+								</div>
+	</div>
+	</div>
+	</div>
+
+					
+
+
+					
+					<div class="container-fluid">
+
+				    <div class="row">
+
+
+
+
+										
+										<div class ="col-md-4">
+											<div class ="bbb">
+										<h1>Welcome to flutter</h1>
+									<p class="text"></br></br></br></br>
+														
+														</br></br></br></br>
+														
+														</p>
+									</div>
+									</div>
+
+																
+																<div class ="col-md-4">
+																	<div class ="ccc">
+															<h1>Twitter Originals</h1>
+																<p class="text">
+														</br></br></br></br>
+														</br></br></br></br>
+														
+														
+														
+														</p>
+																
+																</div>
+																</div>
+
+
+																<div class ="col-md-4">
+																	<div class ="ddd">
+															<h1>Sports Trending Now</h1>
+																<p class="text">
+														
+														</br></br></br></br>
+														</br></br></br>
+														
+														
+														</p>
+																
+																</div>
+																</div>
+
+
+
+																<div class ="col-md-12">
+																	<div class ="ddd">
+															<h1>Sports Trending Now</h1>
+																<p class="text">
+														</br></br></br></br>
+														</br></br></br></br>
+														</br></br></br></br></br></br></br></br></br>
+														</br></br></br></br></br></br></br></br></br></br></br></br>
+														
+														
+														</p>
+																
+																</div>
+																</div>
+
+
+
+																
+
+																				  
+																
+
+																
+
+
+
+
+
+
+
+
+
+
+				</div>
+									<div class="well well-lg">
+									<p> Hello, welcome to great TV.Watch premium original series, full seasons of hit shows, current episodes, movies and more. </p>
+																					  
+
+																					  
+																					</div>
+																					<div class="embed-responsive embed-responsive-16by9">
+										 
+										  <iframe width="560" height="315" src="https://www.youtube.com/embed/lI1xZAHXIcM" frameborder="0" allowfullscreen></iframe>
+									</div>
+
+	<div class ="col-sm-12">
+<p class="footer-links">About  Help  Blog  Status  Jobs  Terms  Privacy  Ads | info  Brand  Advertise  Business  Media  Developers  Directory @ 2016 Flutter </p>
 </div>
 
-<div class ="col-sm-6">
-<div class="log-in panel">Log In</div>
+				</div>
+				
 
-	
-<div class="sign-up panel">Sign Up</div>
-</div>
 
-<div class ="col-sm-12">
-<p class="footer-links">About  Help  Blog  Status  Jobs  Terms  Privacy  Ads | info  Brand  Advertise  Business  Media  Developers  Directory @ 2016 Flutter </p></div>
 
-</div>
+
+
 <% else %>
 <script type="text/javascript"> document.location="/home"</script>
 <% end %>
