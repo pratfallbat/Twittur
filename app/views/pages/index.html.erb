@@ -90,7 +90,28 @@ body{
 
 
  		}
+ 		.oiu{
+ 			margin-top: 0px;
+ 			font-weight: bold;
+ 			text-align: center;
+ 			color: black;
+ 			font-size: 150%;
+ 		
 
+
+ 		}
+ 		
+
+input[type=text], input[type=password] {
+	margin-top: 1px;
+    width: 12%;
+    height: 0.5%;
+    padding: 4px 4px;
+    margin-top:  0.5px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
 
 
 	</style>
@@ -107,28 +128,40 @@ body{
 								<div class ="col-sm-6">
 
 								<div class="log-in panel">
-								<div class="row">
-									
+								<h1 class = "oiu">Log In</h1>
+								<div class="container">
 								
-  <h3 class="text-center">Log In</h3>
-  <%= form_for "/user/sign-up" do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    </br>
-    <%= f.label :email %>
-    <%= f.text_field :email %>
-    </br>
-  
-    <%= f.submit 'Submit' %>
-  <% end %>
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required></br> </br>
 
+    <label><b>Password</b></label>	
+    <input type="password" placeholder="Enter Password" name="psw" required></br>
 
-								</div>
+    <button type="submit" class="btn btn-primary">Login</button></br>
+      </div>
 
 								</div>
 
 									
-								<div class="sign-up panel">Sign Up</div>
+								<div class="sign-up panel">
+								<h1 class = "oiu">Sign Up</h1>
+								<div class="container">
+								
+    <label><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required></br></br>
+
+ <label><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required></br></br>
+
+    <label><b>Password</b></label>	
+    <input type="password" placeholder="Enter Password" name="psw" required></br></br>
+
+    <button type="submit" class="btn btn-primary">Sign Up</button></br>
+      </div>
+
+
+
+								</div>
 								</div>
 	</div>
 	</div>
