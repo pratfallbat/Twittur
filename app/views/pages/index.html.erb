@@ -105,7 +105,27 @@ body{
 							</div>
 
 								<div class ="col-sm-6">
-								<div class="log-in panel">Log In</div>
+
+								<div class="log-in panel">
+								<div class="row">
+									
+								
+  <h3 class="text-center">Log In</h3>
+  <%= form_for "/user/sign-up" do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    </br>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    </br>
+  
+    <%= f.submit 'Submit' %>
+  <% end %>
+
+
+								</div>
+
+								</div>
 
 									
 								<div class="sign-up panel">Sign Up</div>
