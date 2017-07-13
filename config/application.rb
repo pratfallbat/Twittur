@@ -7,6 +7,9 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 # config/application.rb
 config.assets.initialize_on_precompile = false
+config/environments/development.rb
+config/environments/production.rb
+config/environments/test.rb
 
 module Twittur
   class Application < Rails::Application
