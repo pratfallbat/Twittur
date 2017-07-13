@@ -43,6 +43,8 @@ gem 'hirb', '0.7.3'
 
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
+gem 'pg', group: [:development, :production]
+
 
 
 gem 'rails_12factor' , group: :production
@@ -66,8 +68,7 @@ group :development do
 end
 
 group :production do
-  # Use the PostgreSQL gem for Heroku production servers
-  gem 'pg', '0.20.0'
+ 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
